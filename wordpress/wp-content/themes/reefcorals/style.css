@@ -1,0 +1,457 @@
+/*
+Theme Name: ReefCorals
+Text Domain: ReefCorals
+Version: 1.0
+Description: Custom Theme para noticias e información sobre peces, corales marinos
+Tags: responsive, corals, aquarium, reef, fish
+Author: Matias Daniel Torre
+Author URI: https://ar.linkedin.com/public-profile/in/mtorre4580
+*/
+
+.menu-item a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.menu-item a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.copyright {
+    margin: 0;
+    padding: 10px;
+}
+
+.copyright__author {
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.copyright__author:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.copyright__name {
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav.pagination {
+    position: relative;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0,
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    padding: 0;
+    float: left;
+}
+
+.nav-links ul li span.current {
+    padding: 10px;
+    display: block;
+    line-height: 5px;
+    border-radius: 50%;
+    color: #424242;
+}
+
+.nav-links ul li a {
+    padding: 10px;
+    background: #777;
+    display: block;
+    line-height: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.nav-links ul li a:hover {
+    background: #999;
+    border-color: #888;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.prev.page-numbers, a.next.page-numbers, a.prev.page-numbers:hover, a.next.page-numbers:hover {
+    border: 0;
+    background: transparent;
+    color: #424242;
+    font-weight: 900;
+}
+
+.gradient {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('http://www.sympatico.ca/image/policy:1.1853464:1471872377/ocean.jpg?w=1152&$p$w=8237355') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-title .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    margin: auto;
+    width: 90%
+}
+
+.content-posts {
+    background-color: #f5f5f5;
+}
+
+.intro {
+    color: #424242;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .post .title a {
+    color: #424242;
+    font-family: 'Krona One', sans-serif;
+    font-size: 25px;
+}
+
+.media__link :hover {
+    opacity: 0.7;
+}
+
+.media__link {
+    opacity: 1;
+}
+
+.content .post .more-link {
+    color: #01579b;
+}
+
+.content .post .more-link:hover {
+    text-decoration: none;
+}
+
+.content .title {
+    font-weight: bold;
+    font-size: 2rem
+}
+
+.content .content-body p,
+.content .content-body li {
+    font-size: 1.125rem;
+    line-height: 1.6
+}
+
+/** Variables, tipo sass pero con css solamente */
+:root {
+    /** Breakpoints responsive */
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    /** Sidebars */
+    --sidebar-width: 280px;
+    --content-max-width: 860px;
+    /** Colors */
+    --black: #424242;
+}
+
+.content {
+    background-color: #f5f5f5;
+}
+
+.container p {
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+}
+
+.post-subtitle {
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.tag i.fa.fa-tag {
+    margin-right: 5px;
+    color: #2196f3;
+}
+
+.tag a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+div.comment a:hover {
+    text-decoration: none;
+}
+
+figure.wp-block-image.size-large.is-resized.img-thumbnail {
+    margin: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: var(--sidebar-width);
+    background: #424242;
+    color: #fff;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/000/273/915/original/ocean-background.jpg');
+    background-size: cover;
+}
+
+.header .site-title {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+}
+
+.header .btn-primary {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    font-size: 1rem;
+    padding-top: 0.5rem
+}
+
+.header .btn-primary:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: transparent
+}
+
+.header .navbar {
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+.header .nav-item {
+    font-weight: bold
+}
+
+.header .nav-item.active a {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.header .nav-item.active a:hover {
+    text-decoration: none
+}
+
+.header .nav-item a {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.header .nav-item a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    width: 120px;
+}
+
+.img-beginner {
+    text-align: center !important;
+}
+
+.social-list a {
+    width: 32px;
+    height: 32px;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff
+}
+
+.social-list a:hover {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.main-wrapper {
+    margin-left: var(--sidebar-width);
+    background: #fff;
+}
+
+.main-wrapper .container {
+    max-width: var(--content-max-width);
+}
+
+.page-title {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: all .2s;
+}
+
+.sticky {
+    padding: 1em 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-list a {
+        transition: none
+    }
+    .btn {
+        transition: none
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (max-width: 991.98px) {
+    .page-title {
+        position: static;
+    }
+
+    .header {
+        position: sticky;
+        width: inherit;
+        height: auto
+    }
+
+    .header .site-title {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        color: #fff;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    .header .btn-primary {
+        width: 100%
+    }
+
+    .header .navbar {
+        padding: 1rem
+    }
+
+    .main-wrapper {
+        margin-left: 0
+    }
+}
+
+.comment-reply-title {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+img.avatar.avatar-120.photo {
+    border-radius: 10px;
+}
+
+.reply {
+    background-color: #fff;
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+
+.tips-aquarium {
+    font-weight: bold;
+}
+
+label.screen-reader-text {
+    display: none;
+}
+
+#searchform input {
+    border: none;
+}
+
+#searchsubmit {
+    background-color: #fff;
+    color: #2196f3;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.no-results {
+    min-height:60vh; 
+    background-color: #fff;
+}
+
+.img__no-results {
+    width: 400px;
+}
+
+#respond { 
+    padding: 0 10px 0 10px;
+}
+      
+#respond input[type=text], textarea {
+    outline: none;
+    padding: 10px 0;
+    margin: 5px 1px 3px 0px;
+    border: 0;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+#respond input[type=text]:focus,
+input[type=email]:focus, 
+input[type=url]:focus,
+textarea:focus {
+    box-shadow: 0 0 5px #01579b;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid #01579b;
+}
+
+#submit {
+    background-color:#007bff;
+    border-radius: 28px;
+    border: 1px solid #007bff;
+    display: inline-block;
+    cursor: pointer;
+    color:#ffffff;
+    font-size:17px;
+    padding: 16px 31px;
+    text-decoration: none;
+} 
+
+#submit:active { 
+    position: relative;
+    top: 1px;
+}
